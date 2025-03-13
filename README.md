@@ -3,7 +3,7 @@
 ## Description
 This project simulates a simple restaurant system with guests ordering meals and cooks preparing them. The program uses multi-threading to handle multiple guests and cooks simultaneously. The implementation involves:
 - `restaurant.c`: The main C program that initializes the simulation.
-- `queue.c` and `queue.h`: Implementation of a thread-safe queue using a singly linked list.
+- `queue.h`: Implementation of a thread-safe queue using a singly linked list.
 - `makefile`: A build script to compile the project.
 
 ## Files Overview
@@ -15,7 +15,7 @@ This is the main program that simulates a restaurant where:
 - Guests pick up their meals once they are ready.
 - The process is managed using multi-threading with `pthread`.
 
-### 2. `queue.c` & `queue.h`
+### 2.`queue.h`
 These files implement a simple queue using a singly linked list. The queue stores integer values representing meal orders. The queue has the following operations:
 - `myqueue_init(myqueue* q)`: Initializes the queue.
 - `myqueue_is_empty(myqueue* q)`: Checks if the queue is empty.
